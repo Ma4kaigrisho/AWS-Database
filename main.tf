@@ -131,3 +131,5 @@ resource "aws_rds_cluster_instance" "prod_db_instance" {
   engine_version = aws_rds_cluster.prod_db.engine_version
   identifier = "production-db-write"
 }
+
+## add web server to the public subnet and the db to the private one
